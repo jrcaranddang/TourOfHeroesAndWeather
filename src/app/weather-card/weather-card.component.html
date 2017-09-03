@@ -1,0 +1,8 @@
+<div class="card" *ngIf="card">
+  <h1>{{card.title}}</h1>
+  <div>{{card.content}} details</div>
+  <div><label>Title: </label>{{card.title}}</div>
+  <div><label>details: </label> 
+    <input [(ngModel)]="card.content" placeholder="content">
+  </div>
+</div>
